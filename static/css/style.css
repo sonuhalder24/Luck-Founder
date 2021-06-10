@@ -1,0 +1,93 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.contain{
+  width: 100vw;
+  height:120vh;
+  background-color: rgb(59, 10, 35);
+  position: relative;
+}
+.others{
+  position:absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 9;
+}
+.particles {
+  position:absolute;
+  z-index: 2;
+}
+#particles-js{
+  height: 120vh;
+  width: 100vw;
+  z-index: 2;
+}
+
+h1{
+    margin: 0px;
+}
+.checkLuck{
+    margin: 0;
+    padding-bottom: 5px;
+    background-color:rgb(59, 10, 35) ;
+    text-align: center;
+    color: white;
+}
+.showText{
+    text-align: center;
+    background-color: rgb(223, 201, 212);
+    font-size: 1rem;
+    padding-top: 6px;
+    padding-bottom: 10px;
+}
+#reset{
+    background-color: white;
+    color: blueviolet;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 5px;
+    cursor: pointer;
+    border-radius: 14px;
+}
+img{
+    height: 270px;
+    width: 270px;
+}
+
+#snackbar {
+    visibility: hidden; 
+    min-width: 250px; 
+    margin-left: -125px; 
+    background-image:linear-gradient(to right, rgb(59, 10, 35) , rgb(148, 6, 79));
+    color: #fff; 
+    text-align: center; 
+    border-radius: 2px;
+    padding: 16px; 
+    position: fixed; 
+    z-index: 1; 
+    left: 50%; 
+    bottom: 30px; 
+  }
+  
+  #snackbar.show {
+    visibility: visible;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+  
+  @keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
+
+
+
+  
